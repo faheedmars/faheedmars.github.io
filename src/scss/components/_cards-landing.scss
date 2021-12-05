@@ -1,0 +1,65 @@
+@use "../base/"as *;
+
+// Individual Card Styling + Flex for each element
+
+.card-img-1__container,
+.card-img-2__container,
+.card-img-3__container {
+    position: relative;
+
+    &>img {
+        width: 245px;
+
+
+    }
+
+    &>h3 {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: .5rem;
+
+        font-weight: 600;
+        font-size: 1.3125rem;
+        line-height: 115%;
+        color: $white;
+        letter-spacing: -0.03em;
+        text-align: right;
+    }
+
+    h3.header-card-2 {
+        text-align: left;
+    }
+
+
+}
+
+.card1,
+.card2,
+.card3 {
+
+    display: flex;
+    gap: 2rem;
+
+    p.desc-text {
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.03em;
+        max-width: 18ch;
+        color: $black;
+
+        
+    }
+    p.right{
+        text-align: right;
+    }
+    p.left{
+        text-align: left;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}

@@ -1,0 +1,118 @@
+@use "../base/"as *;
+@use "../components/navbar";
+@use "../components/button";
+@use "../components/cards-landing";
+
+
+
+body {
+    background-color: $white;
+    width: 100%;
+
+}
+
+.grid-area {
+    // overflow-x: hidden;
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    margin-top: 5.5rem;
+
+
+    h1.heading {
+
+        width: max-content;
+        justify-self: center;
+        height: max-content;
+        font-size: clamp(3rem, 11.3vw, $h1-mobile);
+        font-weight: $medium;
+        letter-spacing: -0.05em;
+        text-align: right;
+
+    }
+
+    img.landing-img {
+        width: 100%;
+        transform: translateY(-.65rem);
+        z-index: -1;
+    }
+
+    p.subheading {
+        font-size: $p-mobile;
+        max-width: 42ch;
+        letter-spacing: -0.03rem;
+        line-height: 155%;
+        margin: 3rem 2rem;
+        // margin-left: 2rem;
+        justify-self: center;
+
+        span {
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: $semi-bold
+        }
+    }
+
+    .button-list {
+        justify-self: flex-end;
+        margin-right: 2rem;
+        display: flex;
+        gap: .55rem;
+    }
+
+    .heading2-text {
+        justify-self: center;
+        color: $grey;
+        margin: 3rem 2rem;
+
+
+        h2.heading-2 {
+            font-weight: 600;
+            font-size: 31px;
+            line-height: 111.5%;
+            letter-spacing: -0.05em;
+            margin-bottom: 1.5rem;
+            max-width: 22ch;
+        }
+
+        p.subheading-2 {
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 111.5%;
+            letter-spacing: -0.04em;
+            max-width: 32ch;
+            margin-left: 6.65rem;
+
+
+        }
+
+    }
+
+    .card-heading {
+        justify-self: center;
+        margin: 1rem 2rem 4rem;
+        display: flex;
+        gap: 1.25rem;
+
+        img.logo-ktb-heading {
+            width: 4.875rem;
+            filter: grayscale(1) brightness(0);
+        }
+
+        p.card-heading-text {
+            max-width: 14ch;
+            width: max-content;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 31px;
+            line-height: 111%;
+            letter-spacing: -0.05em;
+            color: #2E2E2E;
+        }
+    }
+
+    .cards{
+        justify-self: center;
+    }
+
+}

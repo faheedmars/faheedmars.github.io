@@ -1,0 +1,17 @@
+// Media queries mobile first, min-width approach
+
+@mixin mq($bp){
+    @media (min-width: $bp){
+        @content;
+    }
+}
+
+@mixin button-reset {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+

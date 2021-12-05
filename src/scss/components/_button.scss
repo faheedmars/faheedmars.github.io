@@ -1,0 +1,52 @@
+@use "../base/"as *;
+
+img.icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    // padding: 1rem;
+    // z-index: 5;
+}
+
+button a {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    gap: .5rem;
+    padding: .65rem 1rem;
+    text-decoration: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 104.5%;
+    /* or 17px */
+
+    letter-spacing: -0.04em;
+}
+
+button {
+    z-index: -1;
+    width: max-content;
+
+    &.btn-katalog {
+        background: #DDAB52;
+        border: 2.28293px solid #DDAB52;
+        box-sizing: border-box;
+        border-radius: 30.439px;
+
+        p{
+            color: $white;
+        }
+    }
+
+    &.btn-kontak {
+        background: #FEFEFE;
+        border: 2.28293px solid #2E2E2E;
+        box-sizing: border-box;
+        border-radius: 30.439px;
+
+        p{
+            color: $black;
+        }
+    }
+}

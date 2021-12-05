@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  background: rgba(254, 254, 254, 0.69);
+  backdrop-filter: blur(29px);
+  -webkit-backdrop-filter: blur(29px);
+  width: 100%;
+  height: 2.75rem;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+}
+nav::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #2E2E2E;
+  inset: 0;
+  z-index: -2;
+  left: 1.35rem;
+  right: 1.35rem;
+}
+nav .navlist {
+  display: none;
+}
+nav span {
+  display: block;
+  cursor: pointer;
+  font-size: 1.15rem;
+  letter-spacing: -0.04rem;
+  padding-right: 1.35rem;
+  transition: all 250ms ease-in-out;
+  font-weight: 500;
+}
+nav span:hover, nav span:focus {
+  transform: translateY(3px);
+  color: #DDAB52;
+}
+nav img {
+  display: block;
+  padding-left: 1.35rem;
+  height: 1.5rem;
+  filter: grayscale(1) brightness(0);
+  transition: all 350ms ease-in-out;
+}
+nav img:hover, nav img:focus {
+  transform: scale(0.8);
+  filter: grayscale(0) brightness(0.85);
+}
+
+li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img.icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+button a {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 104.5%;
+  /* or 17px */
+  letter-spacing: -0.04em;
+}
+
+button {
+  z-index: -1;
+  width: max-content;
+}
+button.btn-katalog {
+  background: #DDAB52;
+  border: 2.28293px solid #DDAB52;
+  box-sizing: border-box;
+  border-radius: 30.439px;
+}
+button.btn-katalog p {
+  color: #fefefe;
+}
+button.btn-kontak {
+  background: #FEFEFE;
+  border: 2.28293px solid #2E2E2E;
+  box-sizing: border-box;
+  border-radius: 30.439px;
+}
+button.btn-kontak p {
+  color: #2e2e2e;
+}
+
+.card-img-1__container,
+.card-img-2__container,
+.card-img-3__container {
+  position: relative;
+}
+.card-img-1__container > img,
+.card-img-2__container > img,
+.card-img-3__container > img {
+  width: 245px;
+}
+.card-img-1__container > h3,
+.card-img-2__container > h3,
+.card-img-3__container > h3 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 115%;
+  color: #fefefe;
+  letter-spacing: -0.03em;
+  text-align: right;
+}
+.card-img-1__container h3.header-card-2,
+.card-img-2__container h3.header-card-2,
+.card-img-3__container h3.header-card-2 {
+  text-align: left;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  gap: 2rem;
+}
+.card1 p.desc-text,
+.card2 p.desc-text,
+.card3 p.desc-text {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  max-width: 18ch;
+  color: #2e2e2e;
+}
+.card1 p.right,
+.card2 p.right,
+.card3 p.right {
+  text-align: right;
+}
+.card1 p.left,
+.card2 p.left,
+.card3 p.left {
+  text-align: left;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+body {
+  background-color: #fefefe;
+  width: 100%;
+}
+
+.grid-area {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  margin-top: 5.5rem;
+}
+.grid-area h1.heading {
+  width: max-content;
+  justify-self: center;
+  height: max-content;
+  font-size: clamp(3rem, 11.3vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  text-align: right;
+}
+.grid-area img.landing-img {
+  width: 100%;
+  transform: translateY(-0.65rem);
+  z-index: -1;
+}
+.grid-area p.subheading {
+  font-size: 0.95rem;
+  max-width: 42ch;
+  letter-spacing: -0.03rem;
+  line-height: 155%;
+  margin: 3rem 2rem;
+  justify-self: center;
+}
+.grid-area p.subheading span {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 600;
+}
+.grid-area .button-list {
+  justify-self: flex-end;
+  margin-right: 2rem;
+  display: flex;
+  gap: 0.55rem;
+}
+.grid-area .heading2-text {
+  justify-self: center;
+  color: #a0a0a0;
+  margin: 3rem 2rem;
+}
+.grid-area .heading2-text h2.heading-2 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 111.5%;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+  max-width: 22ch;
+}
+.grid-area .heading2-text p.subheading-2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 111.5%;
+  letter-spacing: -0.04em;
+  max-width: 32ch;
+  margin-left: 6.65rem;
+}
+.grid-area .card-heading {
+  justify-self: center;
+  margin: 1rem 2rem 4rem;
+  display: flex;
+  gap: 1.25rem;
+}
+.grid-area .card-heading img.logo-ktb-heading {
+  width: 4.875rem;
+  filter: grayscale(1) brightness(0);
+}
+.grid-area .card-heading p.card-heading-text {
+  max-width: 14ch;
+  width: max-content;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 111%;
+  letter-spacing: -0.05em;
+  color: #2E2E2E;
+}
+.grid-area .cards {
+  justify-self: center;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
